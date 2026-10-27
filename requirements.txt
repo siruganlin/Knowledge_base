@@ -1,0 +1,28 @@
+# Knowledge_base_0525 依赖清单
+# 来源：静态扫描全部 .py 文件的 import + 本机已装环境版本核对
+# 提示：本机版本可能与你的运行环境不同，建议装好后执行 pip freeze > requirements.txt 校准
+
+# --- LLM / 检索 ---
+langchain-core==1.6.13
+langchain-openai==1.7.2
+langchain-text-splitters
+langgraph==1.2.16
+openai-agents
+pymilvus[model]>=2.4.15,<2.5
+FlagEmbedding==1.3.3
+dashscope
+
+# --- 存储 ---
+pymongo
+minio
+
+# --- Web 服务 ---
+fastapi==0.141.1
+uvicorn==0.52.3
+python-multipart>=0.0.32
+pydantic==2.14.1
+
+# --- 工具 ---
+python-dotenv==1.2.4
+requests==2.34.2
+colorlog==6.12.0
